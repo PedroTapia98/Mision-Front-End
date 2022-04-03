@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de vacunación</title>
+    <div class="c2"></div>
+    
+    
+    <style>
+        .izquierda{
+            position: absolute;
+            top: 20px;
+            left: 80px;
+        }
+        .derecha{
+            text-align: right;
+        }
+        .justificado{
+            text-align: justify;
+        }
+        .negritas{
+            font-weight: 700;
+        }
+        .fondoColor{
+            background-color: #0f6666;
+        }
+        .fondoOpacidad{
+            background-color: #5d0c0c;
+            opacity: 0.6;
+        }
+        .fondoImagen{
+            background-image: url("./enfermerafoto.jpg");
+        }
+        .fondoPosicion{
+            background-image: url("./enfermerafoto.jpg");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .colorRGB{
+            color: rgb(40, 74, 244);
+        }
+        .colorAzul{
+            font-weight: bolder;
+            font-size: 50px;
+            color: rgb(30, 43, 106);
+        }
+        .colorAzul2{
+            font-weight: bolder;
+            font-size: 30px;
+            color: rgb(30, 43, 106);
+        }
+        
+        
+        div{
+            width: 800px;
+            height: 100px;
+            background-color: aliceblue;
+                     
+        }
+        .c1{
+            position: absolute;
+            top: 20px;
+            left: 450px;
+        }
+        .centrado{
+            text-align: center;
+        }
+        .c2{
+            position: absolute;
+            top: 0px;
+            left: 550px;
+        }
+        .c3{
+            position: absolute;
+            top: 20px;
+            left: 580px;
+        }
+        .colorgris{
+            color:rgba(173,168,168, 1)
+        }
+        .c4{
+            position: absolute;
+            top: 20px;
+            left: 710px;
+        }
+        .c5{
+            position: absolute;
+            top: 20px;
+            left: 800px;
+        }
+        .boton-personalizado{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 20px;
+            color:white;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color:rgba(59, 87, 225, 1) ;
+            border-color: rgba(59, 87, 225, 1);
+            border-width: 3px;
+            border-style: solid;
+
+        }
+        .c6{
+            position: absolute;
+            top: 25px;
+            left: 950px;
+
+        }
+        .c7image{
+            position: absolute;
+            top: 100px;
+            left: 550px;
+        }
+        .triangulo{
+            width: 0;
+            height: 0;
+            border-top: 100px red;
+            border-right: 50px solid transparent;
+            border-left: solid transparent;
+        }
+        .ctrian{
+            position: absolute;
+            top: 100px;
+            left: 40px;
+
+        }
+        .ctrian2{
+            position: absolute;
+            top: 300px;
+            left: 450px;
+
+        }
+        .ctexto{
+            position: absolute;
+            top: 150px;
+            left: 100px;
+
+        }
+        .ctexto2{
+            position: absolute;
+            top: 200px;
+            left: 100px;
+
+        }
+        .colorparrafo{
+            color: rgb(90, 104, 174);
+            position: absolute;
+            top: 300px;
+            left: 100px;
+        }
+        .bannerpos{
+            position: absolute;
+            top: 390px;
+            left: 100px;
+
+        }
+        .iconpos{
+            position: absolute;
+            top: 450px;
+            left: 100px;
+
+        }
+        .rectangulo{
+            width: 300px;
+            height: 100px;
+            background-color:( white);
+            opacity: 0.92;
+            position: absolute;
+            top: 480px;
+            left: 130px;
+        }
+        .banner2{
+            width: 500px;
+            height: 80px;
+            position: absolute;
+            top: 490px;
+            left: 140px;
+
+        }
+        .posboton2{
+            position: absolute;
+            top: 510px;
+            left: 690px;
+        }
+        .boton2-personalizado{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 20px;
+            color:white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color:rgba(59, 87, 225, 1) ;
+            border-color: rgba(59, 87, 225, 1);
+            border-width: 2px;
+            border-style: solid;
+           
+        }
+        .bannerpos3{
+            width: 1000px;
+            height: 150px;
+            position: absolute;
+            top: 650px;
+            left: 70px;
+        }
+        .c7{
+            position: absolute;
+            top: 800px;
+            left: 100px;
+
+        }
+        .geor{
+            font-family: georgia;
+        }
+        .geneva{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .colorparrafo2{
+            color: rgb(90, 104, 174);
+            position: absolute;
+            top: 880px;
+            left: 100px;
+
+        }
+        .ctrian3{
+            position: absolute;
+            top: 720px;
+            left: 1050px;
+        }
+        .rectangulo2{
+            width: 600px;
+            height: 2.5px;
+            background-color:rgba(194,188,188, 0.1);
+            opacity: 0.92;
+            position: absolute;
+            top: 828px;
+            left: 550px;
+        }
+        .cajas{
+            width: 210px;
+            height: 230px;
+            background-color: white;
+            opacity: 0.92;
+            border-radius: 5px;
+            box-shadow:  0px 0px 2px 1px #eff0f0;
+
+            
+            
+        }
+        .cajapos1{
+            position: absolute;
+            top: 1000px;
+            left: 100px;
+        }
+        .gradient {
+            border: 0;
+            background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+
+        }
+        .icono2pos{
+            position: absolute;
+            top: 1020px;
+            left: 130px;
+        }
+        .cajasparr{
+            font-weight: bolder;
+            font-size: 20px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1060px;
+            left: 130px ;
+
+        }
+        .colorparrafo3{
+            color: rgb(90, 104, 174);
+            font-size: 12px;
+            position: absolute;
+            top: 1130px;
+            left: 130px;
+        }
+        .cajapos2{
+            position: absolute;
+            top: 1000px;
+            left: 350px;
+        }
+        .cajasparr2{
+            font-weight: bolder;
+            font-size: 20px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1060px;
+            left: 370px ;
+        }
+        .icono3pos{
+            position: absolute;
+            top: 1020px;
+            left: 370px;
+        }
+        .colorparrafo4{
+            color: rgb(90, 104, 174);
+            font-size: 12px;
+            position: absolute;
+            top: 1130px;
+            left: 370px;
+        }
+        .cajapos3{
+            position: absolute;
+            top: 1000px;
+            left: 600px;
+        }
+        .icono4pos{
+            position: absolute;
+            top: 1020px;
+            left: 620px;
+        }
+        .cajasparr3{
+            font-weight: bolder;
+            font-size: 20px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1060px;
+            left: 620px ;
+        }
+        .colorparrafo5{
+            color: rgb(90, 104, 174);
+            font-size: 12px;
+            position: absolute;
+            top: 1130px;
+            left: 620px;
+        }
+        .cajapos4{
+            position: absolute;
+            top: 1000px;
+            left: 850px;
+        }
+        .icono5pos{
+            position: absolute;
+            top: 1020px;
+            left: 870px;
+        }
+        .cajasparr4{
+            font-weight: bolder;
+            font-size: 20px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1060px;
+            left: 870px ;
+
+        }
+        .colorparrafo6{
+            color: rgb(90, 104, 174);
+            font-size: 12px;
+            position: absolute;
+            top: 1130px;
+            left: 880px;
+        }
+        .postrian{
+            position: absolute;
+            top: 1300px;
+            left: 0px;
+        }
+        .rectangulo3{
+            width: 400px;
+            height: 2.5px;
+            background-color:rgba(194,188,188, 0.1);
+            opacity: 0.92;
+            position: absolute;
+            top: 1390px;
+            left: 18px;
+        }
+        .imgpos{
+            position: absolute;
+            top: 1450px;
+            left: 0px;
+        }
+        .postit{
+            position: absolute;
+            top: 1340px;
+            left: 600px;
+               
+        }
+        .colorparrafo7{
+            color: rgb(90, 104, 174);
+            font-size: 16px;
+            position: absolute;
+            top: 1420px;
+            left: 600px;
+        }
+        .rectangulobox{
+            width: 380px;
+            height: 40px;
+            background-color: white;
+            opacity: 0.92;
+            border-radius: 5px;
+            box-shadow:  0px 0px 2px 1px #eff0f0;
+
+        }
+        .rectangulobox2{
+            width: 380px;
+            height: 100px;
+            background-color: white;
+            opacity: 0.92;
+            border-radius: 5px;
+            box-shadow:  0px 0px 2px 1px #eff0f0;
+            position: absolute;
+            top: 1620px;
+            left: 600px;
+
+
+        }
+        .posrecbox{
+            position: absolute;
+            top: 1550px;
+            left: 600px;
+        }
+        .posrecbox2{
+            position: absolute;
+            top: 1740px;
+            left: 600px;
+        }
+        .posrecbox3{
+            position: absolute;
+            top: 1800px;
+            left: 600px;
+        }
+        .posrecbox4{
+            position: absolute;
+            top: 1860px;
+            left: 600px;
+        }
+
+        .boxtit{
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1543px;
+            left: 670px ;
+
+        }
+        .boxtit2{
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1612px;
+            left: 670px ;
+
+        }
+        .boxtit3{
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1730px;
+            left: 670px ;
+
+        }
+        .boxtit4{
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1792px;
+            left: 670px ;
+
+        }
+        .boxtit5{
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 1855px;
+            left: 670px ;
+
+        }
+        .colorparrafobox{
+            color: rgb(90, 104, 174);
+            font-size: 12px;
+            position: absolute;
+            top: 1648px;
+            left: 670px;
+        }
+        .boxicon{
+            position: absolute;
+            top: 1558px;
+            left: 620px;
+        }
+        .boxiconch{
+            position: absolute;
+            top: 1560px;
+            left: 940px;
+        }
+        .posiconbox{
+            position: absolute;
+            top: 1630px;
+            left: 620px;
+        }
+        .posiconbox2{
+            position: absolute;
+            top: 1740px;
+            left: 620px;
+        }
+        .posiconbox3{
+            position: absolute;
+            top: 1805px;
+            left: 620px;
+        }
+        .posiconbox4{
+            position: absolute;
+            top: 1865px;
+            left: 620px;
+        }
+        .boxiconch2{
+            position: absolute;
+            top: 1640px;
+            left: 940px;
+        }
+        .boxiconch3{
+            position: absolute;
+            top: 1750px;
+            left: 940px;
+        }
+        .boxiconch4{
+            position: absolute;
+            top: 1810px;
+            left: 940px;
+        }
+        .boxiconch5{
+            position: absolute;
+            top: 1870px;
+            left: 940px;
+        }
+        .trian2pos{
+            position: absolute;
+            top: 1920px;
+            left: 1050px;
+        }
+        .rectangulo4{
+            width: 500px;
+            height: 2.5px;
+            background-color:rgba(194,188,188, 0.1);
+            opacity: 0.92;
+            position: absolute;
+            top: 2025px;
+            left: 588px;
+        }
+        .postit2{
+            position: absolute;
+            top:1980px ;
+            left: 100px;
+
+        }
+        .colorparrafo8{
+            color: rgb(90, 104, 174);
+            font-size: 16px;
+            position: absolute;
+            top: 2060px;
+            left: 100px;
+        }
+        .imgdocpos{
+            position: absolute;
+            top: 2105px;
+            left: 725px;
+        }
+        .box1{
+            width: 250px;
+            height: 150px;
+            background-color: white;
+            opacity: 0.92;
+            border-radius: 5px;
+            box-shadow:  0px 0px 2px 1px #eff0f0;
+        }
+        .posbox1{
+            position: absolute;
+            top: 2220px;
+            left: 100px;
+        }
+        .posbox2{
+            position: absolute;
+            top: 2220px;
+            left: 400px;
+        }
+        .posbox3{
+            position: absolute;
+            top: 2390px;
+            left: 100px;
+        }
+        .posbox4{
+            position: absolute;
+            top: 2390px;
+            left: 400px;
+        }
+        .icono6pos{
+            position: absolute;
+            top: 2240px;
+            left: 130px;
+        }
+        .icono7pos{
+            position: absolute;
+            top: 2240px;
+            left: 430px;
+        }
+        .icono8pos{
+            position: absolute;
+            top: 2400px;
+            left: 130px;
+        }
+        .icono9pos{
+            position: absolute;
+            top: 2400px;
+            left: 430px;
+        }
+        .estilo2{
+            font-size: 16px;
+            position: absolute;
+            top: 2230px;
+            left: 200px;
+        }
+        .estilo3{
+            font-size: 10px;
+            position: absolute;
+            top: 2260px;
+            left: 200px;
+            color: gray;
+        }
+        .estilo4{
+            font-size: 16px;
+            position: absolute;
+            top: 2230px;
+            left: 500px;
+        }
+        .estilo5{
+            font-size: 10px;
+            position: absolute;
+            top: 2260px;
+            left: 500px;
+            color: gray;
+
+        }
+        .estilo6{
+            font-size: 16px;
+            position: absolute;
+            top: 2390px;
+            left: 200px;
+
+        }
+        .estilo7{
+            font-size: 10px;
+            position: absolute;
+            top: 2420px;
+            left: 200px;
+            color: gray;
+
+        }
+        .estilo8{
+            font-size: 16px;
+            position: absolute;
+            top: 2390px;
+            left: 500px;
+
+        }
+        .estilo9{
+            font-size: 10px;
+            position: absolute;
+            top: 2420px;
+            left: 500px;
+            color: gray;
+        }
+
+        .posbotton{
+            position: absolute;
+            top: 2310px;
+            left: 420px;
+
+        }
+        .boton-personalizado2{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            color:white;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:rgba(59, 87, 225, 1) ;
+            border-color: rgba(59, 87, 225, 1);
+            border-radius: 8px;
+            width: 150px;
+            text-align: center;
+        }
+        .boton-personalizado3{
+            background-color: #EDFBFB;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            color:rgba(59, 87, 225, 1);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 8px;
+            width: 150px;
+            text-align: center;
+        }
+        .posbotton2{
+            position: absolute;
+            top: 2310px;
+            left: 120px;
+        }
+        .posbotton3{
+            position: absolute;
+            top: 2460px;
+            left: 120px;
+        }
+        .posbotton4{
+            position: absolute;
+            top: 2460px;
+            left: 420px;
+        }
+        .piepag{
+            width: 1150px;
+            height: 250px;
+            background-color:( white);
+            opacity: 0.92;
+            position: absolute;
+            top: 2680px;
+            left: 0px;
+        }
+        .postitpiepag{
+            position: absolute;
+            top: 2700px;
+            left: 80px;
+        }
+        .estilopiepag{
+            font-size: 15px;
+            color: gray;
+            position: absolute;
+            top: 2750px;
+            left: 80px;
+        }
+        .estiloppiepag{
+            font-size: 15px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 2700px;
+            left: 750px;
+
+        }
+        .estiloppiepag2{
+            font-size: 15px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 2700px;
+            left: 900px;
+
+        }
+        .estiloppiepag3{
+            font-size: 15px;
+            color: rgb(30, 43, 106);
+            position: absolute;
+            top: 2700px;
+            left: 1050px;
+
+        }
+        .estilo10{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2750px;
+            left: 750px;
+        }
+        .estilo11{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2780px;
+            left: 750px;
+        }
+        .estilo12{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2810px;
+            left: 750px;
+        }
+        .estilo20{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2750px;
+            left: 900px;
+        }
+        .estilo21{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2780px;
+            left: 900px;
+        }
+        .estilo22{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2810px;
+            left: 900px;
+        }
+        .estilo30{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2750px;
+            left: 1050px;
+        }
+        .estilo31{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2780px;
+            left: 1050px;
+        }
+        .estilo32{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2810px;
+            left: 1050px;
+        }
+        .postrianu{
+            position: absolute;
+            top: 2840px;
+            left: 900px;
+        }
+        .posterm{
+            font-size: 11px;
+            color: gray;
+            position: absolute;
+            top: 2880px;
+            left: 80px;
+        }
+  
+    </style>
+    </head>
+    <body>
+        <h2 class="izquierda colorRGB negritas geor" >Vaccination</h2>
+        <h3 class="c1 colorgris negritas">Database</h3>
+        <h3 class="c3 colorgris negritas">Education</h3>
+        <h3 class="c4 colorgris negritas">News</h3>
+        <h3 class="c5 colorgris negritas">Regulation</h3>
+        <a class="boton-personalizado c6 " href="hosbox">Hoax Buster</a>
+        <img class= "c7image"src="./photos/enfermerafoto.jpg"  width="600" height="500" alt="enfermera con vacuna">
+        <img class="ctrian" src="./photos/trian1.png" alt="trian">
+        <img class="ctrian2" src="./photos/trian2.png" alt="trian2">
+        <h1 class="negritas colorAzul ctexto">Fight Virus</h1>
+        <h2 class="negritas colorAzul ctexto2">With Vaccines</h2>
+        <p class="justificado colorparrafo">Let's stop pandemic by killing the virus<br> with a vaccine, don't let yourself and your<br> family get infected</p>
+        <img class="bannerpos" src="./photos/banner1.png" alt="banner1">
+        <img class="iconpos" src="./photos/icono1.png" alt="icono">
+        <div class="rectangulo"></div>
+        <img class="banner2" src="./photos/banner2.png" alt="location,date,vaccineType">
+        <a class="boton2-personalizado posboton2" href="submit">Submit</a>
+        <img class="bannerpos3" src="./photos/banner3.png" alt="empresas afiliadas">
+        <h3 class="negritas colorAzul2 c7 geor">Why should I vaccine?</h3>
+        <p class="justificado colorparrafo2 geor">In order to avoid any doubts getting the COVID-19 <br> vaccine, identify the folowing 4 benefits of COVID-19 <br>vaccination:</p>
+        <img class="ctrian3" src="./photos/trian2.png" alt="trian2">
+        <div class="rectangulo2"></div>
+        <div class="cajas cajapos1"></div>
+        <img class="icono2pos" src="./photos/icono2.png" alt="icono">
+        <p class="cajasparr geor">Minimize  <br> spread of virus</p>
+        <p class="colorparrafo3 geor">Vaccine has been proven <br>
+        effective to prevent someone <br> from getting infected with <br> Coronavirus</p>
+        <div class="cajas gradient cajapos2" ></div>
+        <p class="cajasparr2 geor">Forming <br>antibodies</p>
+        <img class="icono3pos" src="./photos/icono3.png" alt="icono">
+        <p class="colorparrafo4">COVID-19 vaccine proven to <br>help shape atibody <br>response for immune system</p>
+        <div class="cajas cajapos3"></div>
+        <img class="icono4pos" src="./photos/icono4.png" alt="icono">
+        <p class="cajasparr3 geor">Protecting <br>people nearby</p>
+        <p class="colorparrafo5">The benefits of COVID-19 <br>vaccination are the vaccine <br>that we get can also help <br>protect people around us</p>
+        <div class="cajas cajapos4" ></div>
+        <img class="icono5pos" src="./photos/icono5.png" alt="icono">
+        <p class="cajasparr4">Creating group <br>immunity</p>
+        <p class="colorparrafo6">COVID-19 vaccinaton is also <br> beneficial for creating group <br>immunity or herd immunity</p>
+        <img class="postrian" src="./photos/triangulo.png" alt="img">
+        <div class="rectangulo3"></div>
+        <img class="imgpos" src="./photos/modelo.png" alt="mujer con tapabocas">
+        <h3 class="colorAzul2 postit geor centrado">Preparations Before Vaccine</h3>
+        <p class="colorparrafo7 geor">the sucess of vaccines is strongly influenced by the <br>strength of the body's immune system. Therefore, there are <br>several things that can be tried to amke the COVID-19 <br>vaccine work:</p>
+        <div class="rectangulobox posrecbox"></div>
+        <p class="boxtit">Avoid alcoholic beverages</p>
+        <img class="boxicon" src="./photos/icono6.png" alt="icono">
+        <img class="boxiconch"  src="./photos/icono7.png" alt="icono">
+        <div class="rectangulobox2 gradient" ></div>
+        <div class="rectangulobox posrecbox2"></div>
+        <div class="rectangulobox posrecbox3"></div>
+        <div class="rectangulobox posrecbox4"></div>
+        <p class="boxtit2">Avoid stress</p>
+        <p class="boxtit3">Eat healthy food</p>
+        <p class="boxtit4">Get enough sleep</p>
+        <p class="boxtit5">Exercise of physical activity</p>
+        <p class="colorparrafobox geor">Stress has a profound effect an immune work. <br>Mareover, prolonged stress can increase cortisol <br>production and oxidative stress in the body.</p>
+        <img class="posiconbox" src="./photos/icono8.png" alt="icono">
+        <img class="posiconbox2" src="./photos/icono9.png" alt="icono">
+        <img class="posiconbox3" src="./photos/icono10.png" alt="icono">
+        <img class="posiconbox4" src="./photos/icono11.png" alt="icono">
+        <img class="boxiconch2"  src="./photos/icono7.png" alt="icono">
+        <img class="boxiconch3"  src="./photos/icono7.png" alt="icono">
+        <img class="boxiconch4"  src="./photos/icono7.png" alt="icono">
+        <img class="boxiconch5"  src="./photos/icono7.png" alt="icono">
+        <img class="trian2pos" src="./photos/trian2.png" alt="trian">
+        <div class="rectangulo4"></div>
+        <h3 class="colorAzul2 postit2">Emergency Contact</h3>
+        <p class="colorparrafo8 geor" >Contact one of the contcts below if you damily feel <br>unwell and have similar symptoms such as Covid-19, make <br>sure you also take care of yourself before reporting to us:</p>
+        <img class="imgdocpos" src="./photos/doctor.png" alt="doctor">
+        <div class="box1 posbox1" ></div>
+        <div class="box1 posbox2 gradient" ></div>
+        <div class="box1 posbox3" ></div>
+        <div class="box1 posbox4" ></div>
+        <img class="icono6pos" src="./photos/icono12.png" alt="icono de llamda">     
+        <img class="icono7pos" src="./photos/icono13.png" alt="icono de chat">
+        <img class="icono8pos" src="./photos/icono14.png" alt="icono de videollamada">
+        <img class="icono9pos" src="./photos/icono15.png" alt="icono de mensaje">
+        <p class="negritas geor estilo2 geneva" >Call</p>
+        <p class="estilo3">021.123.145.14</p>
+        <p class="negritas geor estilo4 geneva" >Chat</p>
+        <p class="estilo5">021.123.145.14</p>
+        <p class=" negritas estilo6 geneva" >Video Call</p>
+        <p class="estilo7">021.123.145.14</p>
+        <p class=" negritas estilo8 geneva" >Message</p>
+        <p class="estilo9">021.123.145.14</p>
+        <a  class="boton-personalizado2 posbotton" href="Chat Now">Chat Now</a>
+        <a class="boton-personalizado3 posbotton2" href="Call Now">Call Now</a>
+        <a class="boton-personalizado3 posbotton3" href="Video Call Now">Video Call Now</a>
+        <a class="boton-personalizado3 posbotton4" href="Message Now">Message Now</a>
+        <div class="piepag"></div>
+        <h2 class=" colorRGB negritas geor postitpiepag " >Vaccination</h2>
+        <p class="estilopiepag">Our goal is to help the <br>world free from the <br>ongoing pandemic</p>
+        <p class="estiloppiepag negritas geneva">About</p>
+        <p class="estiloppiepag2 negritas geneva">Company</p>
+        <p class="estiloppiepag3 negritas  geneva">Support</p>
+        <p class="estilo10 geneva">About Us</p>
+        <p class="estilo11 geneva">Features</p>
+        <p class="estilo12 geneva">News & Blog</p>
+        <p class="estilo20 geneva">How We Work?</p>
+        <p class="estilo21 geneva">Capital</p>
+        <p class="estilo22 geneva">Security</p>
+        <p class="estilo30 geneva">FAQs</p>
+        <p class="estilo31 geneva">Support Center</p>
+        <p class="estilo32 geneva">Contact Us</p>
+        <img class="postrianu" src="./photos/trianu.png" alt="ultimo triangulo">
+        <p class="posterm">@2021 Vaccination. All rights reserved</p>
+
+    </body>
+
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levantar pedido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 50%;
+            height: 250px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 40px;
+            width: 150%;
+            background-color: #f1f1f1;
+            height: 1300px;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Estamos para servirle</h1>
+    </header>
+    <section>
+        <nav>
+
+
+    <form action="pedido.js">
+        <h2>Información del cliente</h2>
+        <label for="Nombre">Nombre del cliente</label>
+        <input type="text"  id="Nombre" name="Nombre" placeholder="Nombre"><br><br>
+
+        <label for="tel1">Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+        <label for="correo1">Correo Electrónico</label><br>
+        <input type="email" id="correo1" name="correo1"><br><br>
+        <hr>
+        </nav>
+    </section>
+    
+        <article>
+            
+        <h2>Pedido</h2>
+        <p>Sabores del pastel</p>
+        <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+        <label for="Chocolate">Chocolate</label>
+        <input type="checkbox" id="Strawberry" name="Strawberry" value="Strawberry">
+        <label for="Strawberry">Strawberry</label>
+        <input type="checkbox" id="Chocolate Alemán" name="Chocolate Alemán" value="Chocolate Alemán">
+        <label for="Chocolate Alemán">Chocolate Alemán</label>
+        <input type="checkbox" id="Zanahoria" name="Zanahoria" value="Zanahoria">
+        <label for="Zanahoria">Zanahoria</label>
+        <input type="checkbox" id="Coco" name="Coco" value="Coco">
+        <label for="Coco">Coco</label>
+        <input type="checkbox" id="Napololitano" name="Napololitano" value="Napololitano">
+        <label for="Napololitano">Napololitano</label>
+        <input type="checkbox" id="Limón" name="Limón" value="Limón">
+        <label for="Limón">Limón</label>
+        <input type="checkbox" id="Milky Way" name="Milky Way" value="Milky Way">
+        <label for="Milky Way">Milky Way</label>
+        <input type="checkbox" id="M&M" name="M&M" value="M&M">
+        <label for="M&M">M&M</label>
+        <p>¿Cuántos adornos desea en su pastel?</p>
+        <input type="number" id="AdornosCuantos" name="AdornosCuantos"><br>
+        <p>Seleccione el tipo de adorno</p>
+        <input type="checkbox" id="adorno1" name="adorno1" value="adorno1">
+        <label for="adorno1">Cacke Topper</label><br>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_611708-MLM45454877336_042021-F.webp" alt="Decoración" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno2" name="adorno2" value="adorno2">
+        <label for="adorno2">Base de cartón</label><br>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_992878-MLM48692890850_122021-O.webp" alt="imagen de basaes de cartón" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno3" name="adorno3" value="adorno3">
+        <label for="adorno3">Base personalizada</label><br>
+        <img src="https://m.media-amazon.com/images/I/81kTSNwuUvL._SL1500_.jpg" alt="Ejemplo de bases personalizadas" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="adorno4">
+        <label for="adorno4">Perlas de Azúcar</label><br>
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT2hwVqbQgtOKXJP6SiAOGnpO1sj0XGy-C9z3HOm8xrIGwQzbcXQ2Mvz5Im0jC1NeDoRyf7Oiz9OTag&usqp=CAc" alt="perlas de azúcar" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno5" name="adorno5" value="adorno5">
+        <label for="adorno5">Muñecos o figuras personalizadas</label><br>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQVHB_ZIHEZvS0cOYPH3Sj5HMSPtzHKP9zB_PJhVz0BQxjn4s2mmWYs6-l9BDYoJzKOqx7iRjeJm6US792Ia4CsEgRVI6zNiuAn56vz6k_5IKVYu_YBI3sj7w&usqp=CAE" alt="pastel con figuras de dinosaurios" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno6" name="adorno6" value="adorno6">
+        <label for="adorno6">Estrellas miniatura</label><br>
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxFWNcOtzA0dHOy2DtKYX5ub76P1HddcOqHbDji9p_SxCMuG7IyH_VfU3BD9auA8H44R9d78p0oNxZfyrj1K1378P86d8EIRVuzDkRqno&usqp=CAE" alt="estrellas pequeñas de adorno" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno7" name="adorno7" value="adorno7">
+        <label for="adorno7">Velas de cumpleaños personalizadas</label><br>
+        <img src="https://s3.us-east-2.amazonaws.com/ondine.mx/blog/cake_toppers_figura_de_pastel_comica_chistosa_novios_bodas_cdmx_cgtjnr.jpg" alt="vela de pastel para boda" width="100px" height="100px"><br>
+        <input type="checkbox" id="adorno8" name="adorno8" value="adorno8">
+        <label for="adorno8">Globos para pastel</label><br>
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQYUjHTkTS6YLV1s_NNuUeevqYPYsfjMY1Xnq4fZ-Zqfc2lwWcH-eQ0auBJKFhtqGOrT196VDrQLPTVGxX3WYWWpik5wd88cPkpnwj3gQvR&usqp=CAE" alt="variedad de globos" width="100px" height="100px"><br>
+        </article>  
+      
+
+
+
+        <br><br>   
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+
+
+ 
+    </form>
+    
+
+</body>
+</html>

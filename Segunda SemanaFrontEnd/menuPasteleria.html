@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce Paladar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 100%;
+            height: 500px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 50px;
+            width: 120%;
+            background-color: #f1f1f1;
+            height: 1850px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+       
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Pastelería "Dulce Paladar"</h2>
+        <img src="./Banner.png" alt="logo Dulce Paladar" width="1320" height="250">
+    </header>
+    <section>
+        <nav>
+        <h1>Bienvenidos</h1>
+
+    <h2>Menú</h2>
+    <p>Esocoga dentro de nuestra gran variedad de sabores, también podrá hacer combinaciones de sabores para darle un toque único</p>
+    <p>Chocolate...................$110.00</p>
+    <p>Strawberry.................$110.00</p>
+    <p>Chocolate Alemán...........$120.00</p>
+    <p>Zanahoria...................$110.00</p>
+    <p>Coco.........................$110.00</p>
+    <p>Napololitano..................$130.00</p>
+    <p>Limón...........................$110.00</p>
+    <p>Milky Way.......................$150.00</p>
+    <p>M&M.............................$180.00</p>
+        </nav>
+
+     </section>
+
+    <hr>
+    <article>
+
+    <h2>Adornos</h2>
+    <p>La buena apariencía es fundamental en un día importante</p>
+    <br>
+    <p>Cacke Topper.....................$80.00</p>
+    <img src="https://http2.mlstatic.com/D_NQ_NP_2X_611708-MLM45454877336_042021-F.webp" alt="Decoración" width="150px" height="150px">
+    <p>Base de cartón...................$20.00</p>
+    <img src="https://http2.mlstatic.com/D_NQ_NP_992878-MLM48692890850_122021-O.webp" alt="imagen de basaes de cartón" width="150px" height="150px">
+    <p>Base personalizada................$200.00</p>
+    <img src="https://m.media-amazon.com/images/I/81kTSNwuUvL._SL1500_.jpg" alt="Ejemplo de bases personalizadas" width="150px" height="150px">
+    <p>Perlas de azúcar.................$30.00</p>}
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT2hwVqbQgtOKXJP6SiAOGnpO1sj0XGy-C9z3HOm8xrIGwQzbcXQ2Mvz5Im0jC1NeDoRyf7Oiz9OTag&usqp=CAc" alt="perlas de azúcar" width="150px" height="150px">
+    <p>Muñecos o figuras personalizadas....$100.00</p>
+    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQVHB_ZIHEZvS0cOYPH3Sj5HMSPtzHKP9zB_PJhVz0BQxjn4s2mmWYs6-l9BDYoJzKOqx7iRjeJm6US792Ia4CsEgRVI6zNiuAn56vz6k_5IKVYu_YBI3sj7w&usqp=CAE" alt="pastel con figuras de dinosaurios" width="150px" height="150px">
+    <p>Estrellas miniatura................$60.00</p>
+    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxFWNcOtzA0dHOy2DtKYX5ub76P1HddcOqHbDji9p_SxCMuG7IyH_VfU3BD9auA8H44R9d78p0oNxZfyrj1K1378P86d8EIRVuzDkRqno&usqp=CAE" alt="estrellas pequeñas de adorno" width="150px" height="150px">
+    <p>Velas de cumpleaños personalizadas.....$80.00</p>
+    <img src="https://s3.us-east-2.amazonaws.com/ondine.mx/blog/cake_toppers_figura_de_pastel_comica_chistosa_novios_bodas_cdmx_cgtjnr.jpg" alt="vela de pastel para boda" width="150px" height="150px">
+    <p>Globos para pastel...................$30.00</p>
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQYUjHTkTS6YLV1s_NNuUeevqYPYsfjMY1Xnq4fZ-Zqfc2lwWcH-eQ0auBJKFhtqGOrT196VDrQLPTVGxX3WYWWpik5wd88cPkpnwj3gQvR&usqp=CAE" alt="variedad de globos" width="150px" height="150px">
+    <br><br>
+    </article>
+    <br><br>
+    <a href="pedido.html">
+        <input type="button" value="Hacer Pedido">
+    </a>
+
+
+
+</body>
+</html>

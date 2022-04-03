@@ -1,0 +1,835 @@
+.izquierda{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+.derecha{
+    text-align: right;
+}
+.justificado{
+    text-align: justify;
+}
+.negritas{
+    font-weight: 700;
+}
+.fondoColor{
+    background-color: #0f6666;
+}
+.fondoOpacidad{
+    background-color: #5d0c0c;
+    opacity: 0.6;
+}
+.fondoImagen{
+    background-image: url("./enfermerafoto.jpg");
+}
+.fondoPosicion{
+    background-image: url("./enfermerafoto.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.colorRGB{
+    color: rgb(40, 74, 244);
+}
+.colorAzul{
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(30, 43, 106);
+}
+.colorAzul2{
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(30, 43, 106);
+}
+
+
+div{
+    width: 800px;
+    height: 100px;
+    background-color: aliceblue;
+             
+}
+.c1{
+    position: absolute;
+    top: 20px;
+    left: 450px;
+}
+.centrado{
+    text-align: center;
+}
+.c2{
+    position: absolute;
+    top: 0px;
+    left: 550px;
+}
+.c3{
+    position: absolute;
+    top: 20px;
+    left: 580px;
+}
+.colorgris{
+    color:rgba(173,168,168, 1)
+}
+.c4{
+    position: absolute;
+    top: 20px;
+    left: 710px;
+}
+.c5{
+    position: absolute;
+    top: 20px;
+    left: 800px;
+}
+.boton-personalizado{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:rgba(59, 87, 225, 1) ;
+    border-color: rgba(59, 87, 225, 1);
+    border-width: 3px;
+    border-style: solid;
+
+}
+.c6{
+    position: absolute;
+    top: 25px;
+    left: 950px;
+
+}
+.c7image{
+    position: absolute;
+    top: 100px;
+    left: 550px;
+}
+.triangulo{
+    width: 0;
+    height: 0;
+    border-top: 100px red;
+    border-right: 50px solid transparent;
+    border-left: solid transparent;
+}
+.ctrian{
+    position: absolute;
+    top: 100px;
+    left: 40px;
+
+}
+.ctrian2{
+    position: absolute;
+    top: 300px;
+    left: 450px;
+
+}
+.ctexto{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+
+}
+.ctexto2{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+
+}
+.colorparrafo{
+    color: rgb(90, 104, 174);
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+.bannerpos{
+    position: absolute;
+    top: 390px;
+    left: 100px;
+
+}
+.iconpos{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+
+}
+.rectangulo{
+    width: 300px;
+    height: 100px;
+    background-color:( white);
+    opacity: 0.92;
+    position: absolute;
+    top: 480px;
+    left: 130px;
+}
+.banner2{
+    width: 500px;
+    height: 80px;
+    position: absolute;
+    top: 490px;
+    left: 140px;
+
+}
+.posboton2{
+    position: absolute;
+    top: 510px;
+    left: 690px;
+}
+.boton2-personalizado{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color:rgba(59, 87, 225, 1) ;
+    border-color: rgba(59, 87, 225, 1);
+    border-width: 2px;
+    border-style: solid;
+   
+}
+.bannerpos3{
+    width: 1000px;
+    height: 150px;
+    position: absolute;
+    top: 650px;
+    left: 70px;
+}
+.c7{
+    position: absolute;
+    top: 800px;
+    left: 100px;
+
+}
+.geor{
+    font-family: georgia;
+}
+.geneva{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.colorparrafo2{
+    color: rgb(90, 104, 174);
+    position: absolute;
+    top: 880px;
+    left: 100px;
+
+}
+.ctrian3{
+    position: absolute;
+    top: 720px;
+    left: 1050px;
+}
+.rectangulo2{
+    width: 600px;
+    height: 2.5px;
+    background-color:rgba(194,188,188, 0.1);
+    opacity: 0.92;
+    position: absolute;
+    top: 828px;
+    left: 550px;
+}
+.cajas{
+    width: 210px;
+    height: 230px;
+    background-color: white;
+    opacity: 0.92;
+    border-radius: 5px;
+    box-shadow:  0px 0px 2px 1px #eff0f0;
+
+    
+    
+}
+.cajapos1{
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+}
+.gradient {
+    border: 0;
+    background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% );
+
+}
+.icono2pos{
+    position: absolute;
+    top: 1020px;
+    left: 130px;
+}
+.cajasparr{
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1060px;
+    left: 130px ;
+
+}
+.colorparrafo3{
+    color: rgb(90, 104, 174);
+    font-size: 12px;
+    position: absolute;
+    top: 1130px;
+    left: 130px;
+}
+.cajapos2{
+    position: absolute;
+    top: 1000px;
+    left: 350px;
+}
+.cajasparr2{
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1060px;
+    left: 370px ;
+}
+.icono3pos{
+    position: absolute;
+    top: 1020px;
+    left: 370px;
+}
+.colorparrafo4{
+    color: rgb(90, 104, 174);
+    font-size: 12px;
+    position: absolute;
+    top: 1130px;
+    left: 370px;
+}
+.cajapos3{
+    position: absolute;
+    top: 1000px;
+    left: 600px;
+}
+.icono4pos{
+    position: absolute;
+    top: 1020px;
+    left: 620px;
+}
+.cajasparr3{
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1060px;
+    left: 620px ;
+}
+.colorparrafo5{
+    color: rgb(90, 104, 174);
+    font-size: 12px;
+    position: absolute;
+    top: 1130px;
+    left: 620px;
+}
+.cajapos4{
+    position: absolute;
+    top: 1000px;
+    left: 850px;
+}
+.icono5pos{
+    position: absolute;
+    top: 1020px;
+    left: 870px;
+}
+.cajasparr4{
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1060px;
+    left: 870px ;
+
+}
+.colorparrafo6{
+    color: rgb(90, 104, 174);
+    font-size: 12px;
+    position: absolute;
+    top: 1130px;
+    left: 880px;
+}
+.postrian{
+    position: absolute;
+    top: 1300px;
+    left: 0px;
+}
+.rectangulo3{
+    width: 400px;
+    height: 2.5px;
+    background-color:rgba(194,188,188, 0.1);
+    opacity: 0.92;
+    position: absolute;
+    top: 1390px;
+    left: 18px;
+}
+.imgpos{
+    position: absolute;
+    top: 1450px;
+    left: 0px;
+}
+.postit{
+    position: absolute;
+    top: 1340px;
+    left: 600px;
+       
+}
+.colorparrafo7{
+    color: rgb(90, 104, 174);
+    font-size: 16px;
+    position: absolute;
+    top: 1420px;
+    left: 600px;
+}
+.rectangulobox{
+    width: 380px;
+    height: 40px;
+    background-color: white;
+    opacity: 0.92;
+    border-radius: 5px;
+    box-shadow:  0px 0px 2px 1px #eff0f0;
+
+}
+.rectangulobox2{
+    width: 380px;
+    height: 100px;
+    background-color: white;
+    opacity: 0.92;
+    border-radius: 5px;
+    box-shadow:  0px 0px 2px 1px #eff0f0;
+    position: absolute;
+    top: 1620px;
+    left: 600px;
+
+
+}
+.posrecbox{
+    position: absolute;
+    top: 1550px;
+    left: 600px;
+}
+.posrecbox2{
+    position: absolute;
+    top: 1740px;
+    left: 600px;
+}
+.posrecbox3{
+    position: absolute;
+    top: 1800px;
+    left: 600px;
+}
+.posrecbox4{
+    position: absolute;
+    top: 1860px;
+    left: 600px;
+}
+
+.boxtit{
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1543px;
+    left: 670px ;
+
+}
+.boxtit2{
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1612px;
+    left: 670px ;
+
+}
+.boxtit3{
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1730px;
+    left: 670px ;
+
+}
+.boxtit4{
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1792px;
+    left: 670px ;
+
+}
+.boxtit5{
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 1855px;
+    left: 670px ;
+
+}
+.colorparrafobox{
+    color: rgb(90, 104, 174);
+    font-size: 12px;
+    position: absolute;
+    top: 1648px;
+    left: 670px;
+}
+.boxicon{
+    position: absolute;
+    top: 1558px;
+    left: 620px;
+}
+.boxiconch{
+    position: absolute;
+    top: 1560px;
+    left: 940px;
+}
+.posiconbox{
+    position: absolute;
+    top: 1630px;
+    left: 620px;
+}
+.posiconbox2{
+    position: absolute;
+    top: 1740px;
+    left: 620px;
+}
+.posiconbox3{
+    position: absolute;
+    top: 1805px;
+    left: 620px;
+}
+.posiconbox4{
+    position: absolute;
+    top: 1865px;
+    left: 620px;
+}
+.boxiconch2{
+    position: absolute;
+    top: 1640px;
+    left: 940px;
+}
+.boxiconch3{
+    position: absolute;
+    top: 1750px;
+    left: 940px;
+}
+.boxiconch4{
+    position: absolute;
+    top: 1810px;
+    left: 940px;
+}
+.boxiconch5{
+    position: absolute;
+    top: 1870px;
+    left: 940px;
+}
+.trian2pos{
+    position: absolute;
+    top: 1920px;
+    left: 1050px;
+}
+.rectangulo4{
+    width: 500px;
+    height: 2.5px;
+    background-color:rgba(194,188,188, 0.1);
+    opacity: 0.92;
+    position: absolute;
+    top: 2025px;
+    left: 588px;
+}
+.postit2{
+    position: absolute;
+    top:1980px ;
+    left: 100px;
+
+}
+.colorparrafo8{
+    color: rgb(90, 104, 174);
+    font-size: 16px;
+    position: absolute;
+    top: 2060px;
+    left: 100px;
+}
+.imgdocpos{
+    position: absolute;
+    top: 2105px;
+    left: 725px;
+}
+.box1{
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    opacity: 0.92;
+    border-radius: 5px;
+    box-shadow:  0px 0px 2px 1px #eff0f0;
+}
+.posbox1{
+    position: absolute;
+    top: 2220px;
+    left: 100px;
+}
+.posbox2{
+    position: absolute;
+    top: 2220px;
+    left: 400px;
+}
+.posbox3{
+    position: absolute;
+    top: 2390px;
+    left: 100px;
+}
+.posbox4{
+    position: absolute;
+    top: 2390px;
+    left: 400px;
+}
+.icono6pos{
+    position: absolute;
+    top: 2240px;
+    left: 130px;
+}
+.icono7pos{
+    position: absolute;
+    top: 2240px;
+    left: 430px;
+}
+.icono8pos{
+    position: absolute;
+    top: 2400px;
+    left: 130px;
+}
+.icono9pos{
+    position: absolute;
+    top: 2400px;
+    left: 430px;
+}
+.estilo2{
+    font-size: 16px;
+    position: absolute;
+    top: 2230px;
+    left: 200px;
+}
+.estilo3{
+    font-size: 10px;
+    position: absolute;
+    top: 2260px;
+    left: 200px;
+    color: gray;
+}
+.estilo4{
+    font-size: 16px;
+    position: absolute;
+    top: 2230px;
+    left: 500px;
+}
+.estilo5{
+    font-size: 10px;
+    position: absolute;
+    top: 2260px;
+    left: 500px;
+    color: gray;
+
+}
+.estilo6{
+    font-size: 16px;
+    position: absolute;
+    top: 2390px;
+    left: 200px;
+
+}
+.estilo7{
+    font-size: 10px;
+    position: absolute;
+    top: 2420px;
+    left: 200px;
+    color: gray;
+
+}
+.estilo8{
+    font-size: 16px;
+    position: absolute;
+    top: 2390px;
+    left: 500px;
+
+}
+.estilo9{
+    font-size: 10px;
+    position: absolute;
+    top: 2420px;
+    left: 500px;
+    color: gray;
+}
+
+.posbotton{
+    position: absolute;
+    top: 2310px;
+    left: 420px;
+
+}
+.boton-personalizado2{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:rgba(59, 87, 225, 1) ;
+    border-color: rgba(59, 87, 225, 1);
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+.boton-personalizado3{
+    background-color: #EDFBFB;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color:rgba(59, 87, 225, 1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+.posbotton2{
+    position: absolute;
+    top: 2310px;
+    left: 120px;
+}
+.posbotton3{
+    position: absolute;
+    top: 2460px;
+    left: 120px;
+}
+.posbotton4{
+    position: absolute;
+    top: 2460px;
+    left: 420px;
+}
+.piepag{
+    width: 1150px;
+    height: 250px;
+    background-color:( white);
+    opacity: 0.92;
+    position: absolute;
+    top: 2680px;
+    left: 0px;
+}
+.postitpiepag{
+    position: absolute;
+    top: 2700px;
+    left: 80px;
+}
+.estilopiepag{
+    font-size: 15px;
+    color: gray;
+    position: absolute;
+    top: 2750px;
+    left: 80px;
+}
+.estiloppiepag{
+    font-size: 15px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 2700px;
+    left: 750px;
+
+}
+.estiloppiepag2{
+    font-size: 15px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 2700px;
+    left: 900px;
+
+}
+.estiloppiepag3{
+    font-size: 15px;
+    color: rgb(30, 43, 106);
+    position: absolute;
+    top: 2700px;
+    left: 1050px;
+
+}
+.estilo10{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2750px;
+    left: 750px;
+}
+.estilo11{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2780px;
+    left: 750px;
+}
+.estilo12{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2810px;
+    left: 750px;
+}
+.estilo20{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2750px;
+    left: 900px;
+}
+.estilo21{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2780px;
+    left: 900px;
+}
+.estilo22{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2810px;
+    left: 900px;
+}
+.estilo30{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2750px;
+    left: 1050px;
+}
+.estilo31{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2780px;
+    left: 1050px;
+}
+.estilo32{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2810px;
+    left: 1050px;
+}
+.postrianu{
+    position: absolute;
+    top: 2840px;
+    left: 900px;
+}
+.posterm{
+    font-size: 11px;
+    color: gray;
+    position: absolute;
+    top: 2880px;
+    left: 80px;
+}

@@ -1,0 +1,22 @@
+# Campaña de Marketing
+
+Campaña para promover masivamente la vacunación contra el COVID-19 para fines de salud, pero así mismo optimizar este proceso. De tal forma que la vacunación sea
+rápida, organizada, de fácil acceso, se pueda escoger el tipo de vacuna y el agendar la cita sea sencillo.
+
+## Objetivos
+- Promover la aplicación de la vacuna contra COVID-19.
+- Resolver dudas acerca de la vacunación.
+- Remover los posibles impedimentos para la aplicación de la vacuna( tiempo, accesibilidad, etc.)
+
+## Público
+- Público a partir de 18 años de edad.
+- Público no vacunado contra COVID-19.
+- Público con al menos una dósis de la vacuna contra COVID-19.
+- Público que requiere dósis de refuerzo contra COVID-19.
+
+## Medios
+- Facebook
+- Instagram
+- YouTube
+- Radio
+- Televisión
