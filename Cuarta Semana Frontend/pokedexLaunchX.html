@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compaatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Pokedex LaunchX</title>
+<style>
+    .relieve{
+        border–top: 1px solid #444;
+        border–right: 1px solid #333;
+        border–bottom: 1px solid #000;
+        border–left: 1px solid #333;
+        background: #222;
+    }
+    .rectangulo{
+        width: 500px;
+        height: 600px;
+        background-color: red;
+        border-radius: 7px;
+        border-width: 4px;
+        border-style: outset;
+        border-color: #000;
+        position: absolute;
+        top: 80px;
+        left: 200px;
+    }
+    .borde{
+        border-collapse: separate;
+        border-spacing: 20px 10px;
+    }
+    .cilindro {
+        position: relative;
+        width: 50px;
+        height: 528px;
+        background-color: red;
+        border-radius: 65px / 25px;
+        position: absolute;
+        top: 150px;
+        left: 650px;
+        border-style: outset;
+        border-color: #000;
+    }
+
+     .cilindro:before {
+        content: "";
+        position: absolute;
+        background-color: #D9A49F;
+        width: 50px;
+        height: 10px;
+        border-radius: 65px / 15px;
+        top: 0px;
+        border-color: #000;
+    }
+    .rectangulo2{
+        width: 150px;
+        height: 497px;
+        background-color: red;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-color: #000;
+        position: absolute;
+        top: 180px;
+        left: 705px;
+
+    }
+    .triangulo-equilatero-left {
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid red;
+        border-right: 250px solid transparent;
+        position: absolute;
+        top: 179px;
+        left: 850px;
+    }
+    .rectangulo3{
+        width: 242px;
+        height: 400px;
+        background-color: red;
+        padding-bottom: 2px;
+        border-color: #000;
+        position: absolute;
+        top: 279px;
+        left: 855px;
+
+
+    }
+    .rectangulo4{
+        width: 200px;
+        height: 400px;
+        background-color: red;
+        border-color: #000;
+        border-style: solid;
+        border-top-width: 0px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 0px;
+        border-radius: 7px;
+        position: absolute;
+        top: 279px;
+        left: 990px;
+    }
+    .lineas{
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 220px;
+        left: 730px;
+    }
+    
+    .poslinea{
+        position: absolute;
+        top: 220px;
+        left: 900px;
+    }
+    .linea1{
+        width: 280px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        transform: rotate(20deg);
+        top: 268px;
+        left: 820px;
+
+    }
+    .linea2{
+        width: 80px;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+        top: 314px;
+        left: 1091px;
+    }
+    .linea3{
+        width: 2px;
+        height: 340px;
+        background-color: #000;
+        position: absolute;
+        top: 314px;
+        left: 1170px;
+        
+    }
+    .linea4{
+        width: 440px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 651px;
+        left: 730px;
+    }
+    .linea5{
+        width: 2px;
+        height: 431px;
+        background: #000;
+        position: absolute;
+        top: 220px;
+        left: 730px;
+    }
+    .linea6{
+        width: 200px;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+        top: 150px;
+        left: 505px;
+
+    }
+    .linea7{
+        width: 1px;
+        height: 510px;
+        background-color: #000;
+        position: absolute;
+        top: 175px;
+        left: 641px;
+    }
+    .cuadrado{
+        width: 110px;
+        height: 50px;
+        background-color: red;
+        border-color: #000;
+        border-style: solid;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-top-right-radius: 7px;
+        position: absolute;
+        top: 172px;
+        left: 530px;
+    }
+    .lineadiag{
+       width: 108px;
+       height: 3px;
+       background-color: #000;
+       position: absolute;
+       transform: rotate(320deg);
+       top: 184px;
+       left: 411px;
+    }
+    .lineadiag2{
+       width: 100px;
+       height: 1px;
+       background-color: #000;
+       position: absolute;
+       transform: rotate(320deg);
+       top: 204px;
+       left: 441px;
+    }
+    .linea8{
+        width: 224px;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+        top: 219px;
+        left: 200px;
+
+    }
+    .linea9{
+        width: 254px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 236px;
+        left: 200px;
+    }
+    
+    .light{
+        width: 80px;
+        height: 80px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: aliceblue;
+        animation: example infinite .4s;
+        border-width: 5px;
+        border-color: rgb(217, 241, 241);
+        border-style: outset;
+
+    }
+    @keyframes example {
+        0% {background: rgb(217, 241, 241) ;}
+        100% {background: rgba(57, 243, 240, 1);}
+    }
+    .poslight{
+        position: absolute;
+        top: 100px;
+        left: 230px;
+    }
+    .light2{
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: aliceblue;
+        animation: examples infinite .4s;
+        border-width: 1px;
+        border-color: rgb(217, 241, 241);
+        border-style: outset;
+    }
+    @keyframes examples {
+        0% {background: rgb(202, 94, 88) ;}
+        100% {background: rgba(227, 22, 11, 1);}
+    }
+    .poslight1{
+        position: absolute;
+        top: 100px;
+        left: 350px;
+    }
+    .light3{
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: aliceblue;
+        animation: exampless infinite .4s;
+        border-width: 1px;
+        border-color: rgb(217, 241, 241);
+        border-style: outset;
+    }
+    @keyframes exampless {
+        0% {background: rgb(215, 213, 68) ;}
+        100% {background: yellow;}
+    }
+    .poslight2{
+        position: absolute;
+        top: 100px;
+        left: 380px;
+    }
+    .light4{
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: aliceblue;
+        animation: examplesss infinite .4s;
+        border-width: 1px;
+        border-color: rgb(217, 241, 241);
+        border-style: outset;
+    }
+    @keyframes examplesss {
+        0% {background: rgb(166, 255, 151) ;}
+        100% {background: rgba(54, 242, 7, 1);}
+    }
+    .poslight3{
+        position: absolute;
+        top: 100px;
+        left: 410px;
+    }
+    .linea10{
+        width: 1px;
+        height: 400px;
+        background-color: #000;
+        position: absolute;
+        top:235px ;
+        left: 220px;
+    }
+    .cuadrado1{
+        width: 420px;
+        height: 50px;
+        background-color: red;
+        border-color: #000;
+        border-style: solid;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+        border-bottom-left-radius: 7px;
+        position: absolute;
+        top: 620px;
+        left: 220px;
+    }
+    .cuadrado3{
+        width: 70px;
+        height: 230px;
+        background: linear-gradient(30deg,transparent 10%, #C5C3CF 10%);
+        padding: 1em 10%;
+        position: absolute;
+        top: 260px;
+        left: 240px;
+        border-radius: 10px;
+    }
+    .botoncirculo{
+        width: 40px;
+        height: 40px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #2B7AE7;
+        border-width: 7px;
+        border-style: outset;
+        position: absolute;
+        top: 530px;
+        left: 250px;
+        border-color: #2B7AE7;
+    }
+    .botoreccir{
+        width: 70px;
+        height: 8px;
+        background-color: greenyellow;
+        border-radius: 20px;
+        border-width: 7px;
+        border-style: outset;
+        border-color: greenyellow;
+        position: absolute;
+        top: 540px;
+        left: 320px;
+    }
+    .botoreccir2{
+        width: 70px;
+        height: 8px;
+        background-color: orangered;
+        border-radius: 20px;
+        border-width: 7px;
+        border-style: outset;
+        border-color: orangered;
+        position: absolute;
+        top: 540px;
+        left: 430px;
+    }
+    .rectangulo5{
+        width: 180px;
+        height: 80px;
+        background-color: yellow;
+        border-radius: 20px;
+        border-width: 7px;
+        border-color: yellow;
+        position: absolute;
+        top: 575px;
+        left: 330px;
+    }
+    .rectangulo6{
+        width: 350px;
+        height: 200px;
+        background-color: whitesmoke;
+        border-radius: 20px;
+        border-width: 2px;
+        border-color: #000;
+        border-style: solid;
+        position: absolute;
+        top: 270px;
+        left: 250px;
+    }
+    .botoncirculosmall{
+        width: 20px;
+        height: 20px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: red;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 485px;
+        left: 320px;
+        border-color: black;
+    }
+    .lineapar1{
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 480px;
+        left: 470px;
+    }
+    .lineapar2{
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 490px;
+        left: 470px;
+    }
+    
+    .lineapar3{
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 500px;
+        left: 470px;
+    }
+    .lineapar4{
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 510px;
+        left: 470px;
+    }
+    .cirsmall{
+        width: 5px;
+        height: 5px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: red;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 261px;
+        left: 420px;
+        border-color: black;
+    }
+    .cirsmall2{
+        width: 5px;
+        height: 5px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: red;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 261px;
+        left: 440px;
+        border-color: black;
+    }
+    .cruz1{
+        width: 20px;
+        height: 80px;
+        background: #2B7AE7;
+        position: absolute;
+        top: 550px;
+        left: 570px;
+        border-radius: 5px;
+        border-width: 3px;
+        border-color: gray;
+        border-style: outset;
+    }
+    .cruz2{
+        width: 75px;
+        height: 20px;
+        background: #2B7AE7;
+        position: absolute;
+        top: 580px;
+        left: 542px;
+        border-radius: 5px;
+        border-width: 3px;
+        border-color: gray;
+        border-style: outset;
+    }
+    .rectangulo7{
+        width: 310px;
+        height: 120px;
+        background: greenyellow;
+        position: absolute;
+        top: 320px;
+        left: 750px;
+        border-radius: 5px;
+        border-color: #000;
+        border-style: solid;
+        border-width: 2px;
+    }
+    .reccon{
+        width: 30px;
+        height: 60px;
+        background-color: #2B7AE7;
+        position: absolute;
+        top: 450px;
+        left: 800px;
+        border-radius: 5px;
+        border-color: #2B7AE7;
+        border-style: outset;
+        border-width: 5px;
+    }
+    .recon2{
+        width: 30px;
+        height: 60px;
+        background:#2B7AE7;
+        position: absolute;
+        top: 450px;
+        left: 838px;
+        border-radius: 5px;
+        border-color: #2B7AE7;
+        border-width: 5px;
+        border-style: outset;
+    }
+    
+    .recon3{
+        width: 30px;
+        height: 60px;
+        background:#2B7AE7;
+        position: absolute;
+        top: 450px;
+        left: 876px;
+        border-radius: 5px;
+        border-color: #2B7AE7;
+        border-width: 5px;
+        border-style: outset;
+    }
+    .recon4{
+        width: 30px;
+        height: 60px;
+        background:#2B7AE7;
+        position: absolute;
+        top: 450px;
+        left: 913px;
+        border-radius: 5px;
+        border-color: #2B7AE7;
+        border-width: 5px;
+        border-style: outset;
+    }
+    .recon5{
+        width: 30px;
+        height: 60px;
+        background:#2B7AE7;
+        position: absolute;
+        top: 450px;
+        left: 951px;
+        border-radius: 5px;
+        border-color: #2B7AE7;
+        border-width: 5px;
+        border-style: outset;
+    }
+    .recon6{
+        width: 30px;
+        height: 60px;
+        background:#2B7AE7;
+        position: absolute;
+        top: 450px;
+        left: 989px;
+        border-radius: 5px;
+        border-color: #2B7AE7;
+        border-width: 5px;
+        border-style: outset;
+    }
+    .linea11{
+        width: 220px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 480px;
+        left: 800px;
+        border-style: outset;
+        border-color: #2B7AE7;
+    }
+    .cirsmall3{
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: orangered;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 530px;
+        left: 800px;
+        border-color: black;
+
+    }
+    .cirsmall4{
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: green;
+        border-width: 2px;
+        border-style: solid;
+        position: absolute;
+        top: 530px;
+        left: 820px;
+        border-color: black;
+    }
+    .botonescuadrados{
+        height: 20px;
+        width: 20px;
+        background: gray;
+        border-radius: 5px;
+        border-color: gray;
+        border-width: 5px;
+        border-style: outset;
+        position: absolute;
+        top: 555px;
+        left: 800px;
+    }
+    .botonescuadrados2{
+        height: 20px;
+        width: 20px;
+        background: gray;
+        border-radius: 5px;
+        border-color: gray;
+        border-width: 5px;
+        border-style: outset;
+        position: absolute;
+        top: 555px;
+        left: 830px;
+    }
+    .punto{
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 564px;
+        left: 808px;
+    }
+    .punto2{
+        width: 10px;
+        height: 10px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 564px;
+        left: 838px;
+    }
+    .botoreccir3{
+        width: 70px;
+        height: 8px;
+        background-color: greenyellow;
+        border-radius: 20px;
+        border-width: 7px;
+        border-style: outset;
+        border-color: greenyellow;
+        position: absolute;
+        top: 530px;
+        left: 900px;
+    }
+    .botoreccir4{
+        width: 70px;
+        height: 8px;
+        background-color: orangered;
+        border-radius: 20px;
+        border-width: 7px;
+        border-style: outset;
+        border-color: orangered;
+        position: absolute;
+        top: 530px;
+        left: 1000px;
+    }
+    .rectangulo8{
+        width: 160px;
+        height: 55px;
+        background: orange;
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000;
+        position: absolute;
+        top: 589px;
+        left: 760px;
+    }
+    .rectangulo9{
+        width: 160px;
+        height: 55px;
+        background: orange;
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #000;
+        position: absolute;
+        top: 589px;
+        left: 950px;
+    }
+    .posserarch{
+        position: absolute;
+        top: 440px;
+        left: 280px;
+    }
+    .posimg{
+        position: absolute;
+        top: 290px;
+        left: 280px;
+    }
+    .posbotton{
+        position: absolute;
+        top: 440px;
+        left: 460px;
+    }
+    .posname{
+        position: absolute;
+        top: 260px;
+        left: 430px;
+    }
+    .posize{
+        position: absolute;
+        top: 275px;
+        left: 430px;
+    }
+    .posweight{
+        position: absolute;
+        top: 290px;
+        left: 430px;
+    }
+    .poshealt{
+        position: absolute;
+        top: 305px;
+        left: 430px;
+    }
+    .posattack{
+        position: absolute;
+        top: 320px;
+        left: 430px;
+    }
+    .posdeffense{
+        position: absolute;
+        top: 335px;
+        left: 430px;
+    }
+    .pospecialdeffense{
+        position: absolute;
+        top: 350px;
+        left: 430px;
+    }
+    .pospeed{
+        position: absolute;
+        top: 365px;
+        left: 430px;
+    }
+    body{
+        background-image: url(./forest.jpg);
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        background-size:  100rem;
+    }
+    .cuadrotapar{
+        width: 300px;
+        height: 150px;
+        position: 0px;
+        left: 0px;
+        background: #dd3e54;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #6be585, #dd3e54);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .postitle{
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="cuadrotapar" ></div>
+    <h1 class="postitle">Pokedex LaunchX</h1>
+    <div class="rectangulo relieve borde"></div>
+    <div class="cilindro"></div>
+    <div class="rectangulo2"></div>
+    <div class="triangulo-equilatero-left"></div>
+    <div class="rectangulo3"></div>
+    <div class="rectangulo4"></div>
+    <div class="lineas"></div>
+    <div class="bg-lineas-diagonales poslinea"></div>
+    <div class="linea1"></div>
+    <div class="linea2"></div>
+    <div class="linea3"></div>
+    <div class="linea4"></div>
+    <div class="linea5"></div>
+    <div class="linea6"></div>
+    <div class="linea7"></div>
+    <div class="cuadrado"></div>
+    <div class="lineadiag"></div>
+    <div class="lineadiag2"></div>
+    <div class="linea8"></div>
+    <div class="linea9"></div>
+    <div class="light poslight"></div>
+    <div class="circulo"></div>
+    <div class="light2 poslight1"></div>
+    <div class="light3 poslight2"></div>
+    <div class="light4 poslight3"></div>
+    <div class="linea10"></div>
+    <div class="cuadrado1"></div>
+    <div class="cuadrado3"></div>
+    <div class="botoncirculo"></div>
+    <div class="botoreccir"></div>
+    <div class="botoreccir2"></div>
+    <div class="rectangulo5"></div>
+    <div class="rectangulo6"></div>
+    <div class="botoncirculosmall"></div>
+    <div class="lineapar1"></div>
+    <div class="lineapar2"></div>
+    <div class="lineapar3"></div>
+    <div class="lineapar4"></div>
+    <div class="cirsmall"></div>
+    <div class="cirsmall2"></div>
+    <div class="cruz1"></div>
+    <div class="cruz2"></div>
+    <div class="rectangulo7"></div>
+    <div class="reccon"></div>
+    <div class="recon2"></div>
+    <div class="recon3"></div>
+    <div class="recon4"></div>
+    <div class="recon5"></div>
+    <div class="recon6"></div>
+    <div class="linea11"></div>
+    <div class="cirsmall3"></div>
+    <div class="cirsmall4"></div>
+    <div class="botonescuadrados"></div>
+    <div class="botonescuadrados2"></div>
+    <div class="punto"></div>
+    <div class="punto2"></div>
+    <div class="botoreccir3"></div>
+    <div class="botoreccir4"></div>
+    <div class="rectangulo8"></div>
+    <div class="rectangulo9"></div>
+    <input class="posserarch"  type="text" placeholder="Pokemon" id="Pokename"><br>
+    <img class="posimg" src="./pokebola.png" alt="Pokebola" id="pokeImg" width="150px"><br>
+    <button class="posbotton" onclick="fetchPokemon()">Buscar</button>
+    <p class="posname" id="pokeName_lbl">Name: </p>
+    <p class="posize" id="pokeSize_lbl">Size:</p>
+    <p class="posweight" id="pokeWeight_lbl">Weight:</p>
+    <p class="poshealt" id="pokeHealth_lbl">Health:</p>
+    <p class="posattack" id="pokeAttack_lbl">Attack:</p>
+    <p class="posdeffense" id="pokeDeffense_lbl">Deffense:</p>
+    <p class="pospecialdeffense" id="pokeSpecialDeffense_lbl"> Special Deffense:</p>
+    <p class="pospeed" id="pokeSpeed_lbl">Speed: </p>
+    
+</body>
+<footer>
+    <script src="./pokedexLauchX.js"></script>
+
+</footer>
+
+</html>
